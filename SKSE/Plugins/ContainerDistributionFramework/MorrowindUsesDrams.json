@@ -1,7 +1,7 @@
 {
   "rules" : [
     {
-      "friendlyName" : "Swap Septims to Drams/Septims in Solstheim",
+      "friendlyName" : "Swap Septims to Drams/Septims on Solstheim",
       "conditions" : {
         "locations" : [
           "0x16E2A|Dragonborn.esm"
