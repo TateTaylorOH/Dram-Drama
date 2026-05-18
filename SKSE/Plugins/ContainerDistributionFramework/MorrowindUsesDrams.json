@@ -1,7 +1,7 @@
 {
   "rules" : [
     {
-      "friendlyName" : "Solstheim Septims to Dram/Septim",
+      "friendlyName" : "Swap Septims to Drams/Septims in Solstheim",
       "conditions" : {
         "locations" : [
           "0x16E2A|Dragonborn.esm"
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "friendlyName" : "Fill Vendor Chests with Drams",
+      "friendlyName" : "Add Drams to Solstheim Vendors",
       "conditions" : {
         "locations" : [
           "0x16E2A|Dragonborn.esm"
