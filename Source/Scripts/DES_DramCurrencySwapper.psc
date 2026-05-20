@@ -64,7 +64,6 @@ Function UpdateCosts()
 
 	;float DramTrainingMult = 10.0*DES_DramWorth.GetValue()
 	;float DramTrainingBase = 200.0*DES_DramWorth.GetValue()
-
 	;SetTrainingOverrides(true, DramTrainingMult, true, DramTrainingBase)
 
 	Ulfric = (Quest.GetQuest("DES_UlfricWindhelmServices")).GetStage()
