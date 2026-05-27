@@ -1,4 +1,4 @@
-Scriptname DES_DramCurrencySwapper  extends DES_CurrencyFramework_UtilityInt Conditional
+Scriptname DES_DramCurrencySwapper  extends DES_CurrencyFramework_UtilityRemote Conditional
 
 Import SEA_BarterFunctions 
 
@@ -9,7 +9,8 @@ DES_CurrencyFramework_Functions Property CurrencyFunctions auto
 ;--------------------------------------------------
 
 Actor Property PlayerRef auto
-MiscObject Property DES_Dram Auto 
+MiscObject Property DES_Dram Auto
+Perk Property DES_MorrowindPriceAdjustmentPerk auto
 
 ;--------------------------------------------------
 ;SHARED VALUES
@@ -75,6 +76,16 @@ Function UpdateCosts()
 endFunction
 
 ;--------------------------------------------------
+
+Perk Function GetPriceMod(Form akCurrency)
+
+	IF akCurrency == DES_Dram
+		return DES_MorrowindPriceAdjustmentPerk
+	ENDIF
+
+endFunction
+
+;--------------------------------------------------
 ;EVENTS
 ;--------------------------------------------------
 
@@ -98,7 +109,6 @@ endFunction
 ;--------------------------------------------------
 
 Formlist Property DES_DramLocations auto
-Perk Property DES_MorrowindPriceAdjustmentPerk auto
 
 Function OnLocationChange_Alias()
 
